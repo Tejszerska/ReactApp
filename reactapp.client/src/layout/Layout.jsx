@@ -15,7 +15,7 @@ export function Layout() {
                 <Container fluid>
                     <Navbar.Brand>
                         <Link to="/" className="d-block">
-                            <Image src="/image/logo.png" className="logo" />
+                            <Image src="/image/logo_nav.png" className="logo" />
                         </Link>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
@@ -26,43 +26,43 @@ export function Layout() {
                             navbarScroll
                         >
                             <Nav.Link>
-                                <Link to="/" className="d-block">Home</Link>
+                                <Link to="/" className="d-block">Strona g³ówna</Link>
                             </Nav.Link>
                             <NavDropdown
-                                title="Magazyn"
-                                id={`magazyn`}
+                                title="Zwierzêta"
+                                id={`zwierzeta`}
                             >
                                 <NavDropdown.Item>
-                                    <Link to="/towar" className="d-block" >Towar</Link>
+                                    <Link to="/zwierzeta/koty" className="d-block">Wszystkie</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/towary" className="d-block">Towary</Link>
+                                    <Link to="/zwierzeta/koty" className="d-block">Koty</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/zwierzeta/psy" className="d-block">Psy</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/zwierzeta/psy" className="d-block">Pozosta³e</Link>
                                 </NavDropdown.Item>
                             </NavDropdown>
                             <NavDropdown
-                                title="Kadry"
-                                id={`kadry`}
+                                title="Adopcje"
+                                id={`adopcje`}
                             >
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block" >Pracownik</Link>
+                                    <Link to="/zwierzeta/koty" className="d-block">Oczekujace</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Pracownicy</Link>
+                                    <Link to="/zwierzeta/koty" className="d-block">Zatwierdzone</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/zwierzeta/psy" className="d-block">Wszystkie</Link>
                                 </NavDropdown.Item>
                             </NavDropdown>
-                            <NavDropdown
-                                title="Inne"
-                                id={`offcanvasNavbarDropdown-expand`}
-                            >
-                                <NavDropdown.Item href="#action3">Inne 1</NavDropdown.Item>
-                                <NavDropdown.Item href="#action4">
-                                    Inne 2
-                                </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action5">
-                                    Inne 3
-                                </NavDropdown.Item>
-                            </NavDropdown>
+
+                            <Nav.Link>
+                                <Link to="/" className="d-block">Dodaj zwierzê</Link>
+                            </Nav.Link>
 
                         </Nav>
                         <Form className="d-flex">
@@ -72,7 +72,7 @@ export function Layout() {
                                 className="me-2"
                                 aria-label="Search"
                             />
-                            <Button variant="outline-success">Search</Button>
+                            <Button variant="outline-success"></Button>
                         </Form>
                     </Navbar.Collapse>
                 </Container>

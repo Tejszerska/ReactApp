@@ -3,11 +3,11 @@
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
+    font-family: Arial
 }
 
 .logo {
-    width: 35px;
-    height: 35px;
+    height: 50px;
     margin-right: 10px;
 }
 
